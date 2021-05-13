@@ -18,6 +18,10 @@ section {
     height: max-content;
 }
 
+.navbar-brand {
+    width: 80%;
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -57,7 +61,6 @@ nav ul li {
     margin-top: 65px;
     background-image: url('../images/public/joshua-fernandez-RYdzjEVx_OE-unsplash.jpg');
     width: 100vw;
-    filter: brightness(90%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -149,11 +152,15 @@ nav ul li {
                     0 8px 16px rgba(0,0,0,0.02),
                     0 16px 32px rgba(0,0,0,0.02)
     }
+    
+    .navbar-brand {
+        width: 70%;
+    }
 
     .jumbotron {
         position: relative;
         height: 400px;
-        background-image: url('../images/maxim-zrrUJfQbY2g-unsplash.jpg');
+        background-image: url('../images/public/joshua-fernandez-RYdzjEVx_OE-unsplash.jpg');
         width: 100vw;
         background-size: cover;
         background-position: center;
