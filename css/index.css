@@ -626,8 +626,8 @@ nav ul li {
         position: relative;
         transform: translate(-53.5%, -50%);
         width: 90vw;
-        left: 50%;
-        margin-top: 390px;
+        left: 51%;
+        margin-top: 410px;
     }
 
     .sec1 {
@@ -666,11 +666,12 @@ nav ul li {
     }
 
     .chatButton {
-        position: absolute;
+        position: relative;
         transform: translate(-50%, -50%);
         z-index: 2;
-        left: 50%;
-        top: 67%;
+        left: 44%;
+        margin-top: 0px;
+        margin-bottom: 30px;
         display: flex;
         align-items: center;
         width: max-content;
