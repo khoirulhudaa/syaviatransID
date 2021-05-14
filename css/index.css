@@ -1,5 +1,10 @@
 * {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -13,6 +18,7 @@ body {
 }
 
 section {
+    position: relative;
     width: 100vw;
     height: max-content;
 }
@@ -21,11 +27,23 @@ section {
     width: 80%;
 }
 
+.Pesan {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -160px;
+    background-color: #228ecc;
+    border-radius: 50px;
+    padding: 7px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
 .navbar {
     position: fixed;
     top: 0;
     width: 100vw;
-    z-index: 999;
+    z-index: 333;
     padding-left: 30px;
     padding-right: 30px;
     box-sizing: border-box;
@@ -56,28 +74,13 @@ nav ul li {
 
 .jumbotron {
     position: relative;
-    height: 580px;
-    margin-top: 65px;
+    height: 600px;
+    margin-top: 55px;
     width: 100vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation: jumbotronLive 22s infinite linear;
-}
-
-@keyframes jumbotronLive {
-    0% {
-        background-image: url('../images/public/joshua-fernandez-RYdzjEVx_OE-unsplash.jpg');   
-    }
-    33% {
-        background-image: url('../images/public/jacek-dylag-yNMserxbVms-unsplash.jpg');    
-    }
-    65% {
-        background-image: url('../images/public/viktor-bystrov-qd-zd2MoeE8-unsplash.jpg');    
-    }
-    100% {
-        background-image: url('../images/public/joshua-fernandez-RYdzjEVx_OE-unsplash.jpg');   
-    }
+    background-image: url('../images/public/joshua-fernandez-RYdzjEVx_OE-unsplash.jpg'); 
 }
 
 .jumbotron::before {
@@ -91,8 +94,11 @@ nav ul li {
 
 .jumbotron .title-jumbotron {
     position: absolute;
-    margin-top: 140px;
-    left: 50px;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    left: 50%;
+    text-align: center;
+    top: 190px;
     text-shadow: 0 1px 1px rgba(0,0,0,0.12), 
                 0 2px 2px rgba(0,0,0,0.12), 
                 0 4px 4px rgba(0,0,0,0.12), 
@@ -102,9 +108,18 @@ nav ul li {
     color: white;
 }
 
-.card {
-    position: absolute;
-    top: 70px;
+.jumbotron p {
+    position: relative;
+    margin: auto;
+    margin-top: 280px;
+    width: 80%;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.12), 
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);
+    color: white;
 }
 
 .btn-danger {
@@ -148,10 +163,11 @@ nav ul li {
 }
 
 .chatButton {
-    position: absolute;
+    position: relative;
     z-index: 999;
-    left: 40px;
-    top: 50%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
     width: max-content;
@@ -172,7 +188,7 @@ nav ul li {
     margin: 0 15px;
     height: max-content;
     border-radius: 100px;
-    padding: 14px 14px;
+    padding: 14px 18px;
     cursor: pointer;
 }
 
@@ -182,7 +198,7 @@ nav ul li {
     margin: 0 15px;
     height: max-content;
     border-radius: 100px;
-    padding: 14px 18px;
+    padding: 14px 21px;
     cursor: pointer;
 }
 
@@ -200,7 +216,7 @@ nav ul li {
 
 .sec1 {
     position: relative;
-    margin: 20px auto;
+    margin: 40px auto 20px auto;
     background-color: #228ecc;
     display: flex;
     width: 96%;
@@ -211,13 +227,26 @@ nav ul li {
     padding: 0;   
 }
 
+.secDecorations {
+    position: absolute;
+    background-image: url('../images/memphis/Group 2 (4).png');
+    width: 130px;
+    height: 130px;
+    opacity: 0.5;
+    bottom: -105px;
+    right: 2px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .secDecoration1 {
     position: absolute;
-    background-image: url('../images/memphis/pls1.png');
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-    bottom: -250px;
+    background-image: url('../images/memphis/Group 2 (4).png');
+    width: 130px;
+    height: 130px;
+    opacity: 0.5;
+    bottom: -1090px;
     left: 2px;
     background-position: center;
     background-repeat: no-repeat;
@@ -226,12 +255,12 @@ nav ul li {
 
 .secDecoration2 {
     position: absolute;
-    background-image: url('../images/memphis/Group 1 (1).png');
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-    bottom: -550px;
-    left: 2px;
+    background-image: url('../images/memphis/Group 2 (4).png');
+    width: 130px;
+    height: 130px;
+    opacity: 0.5;
+    bottom: -1650px;
+    right: 2px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -239,12 +268,12 @@ nav ul li {
 
 .secDecoration3 {
     position: absolute;
-    background-image: url('../images/memphis/Group 3 (1).png');
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-    bottom: -250px;
-    right: 2px;
+    background-image: url('../images/memphis/Group 2 (4).png');
+    width: 130px;
+    height: 130px;
+    opacity: 0.5;
+    bottom: -2010px;
+    left: 2px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -256,24 +285,21 @@ nav ul li {
     padding: 40px;
 }
 
-.sec1 .secSide2 {
-    width: 30%;
-    height: 100%;
-    padding: 40px;
-}
-
 .sec1 form {
+    text-align: center;
     width: 100%;
 }
 
 .sec1 form div:nth-child(2),
 .sec1 form div:nth-child(4),
-.sec1 form div:nth-child(3) {
+.sec1 form div:nth-child(3), 
+.sec1 form div:nth-child(5) {
     margin-top: 50px;
 }
 
 .sec1 label {
     color: white;
+    text-align: center;
 }
 
 .sec1 form input, .sec1 form select {
@@ -290,25 +316,134 @@ nav ul li {
 
 /* akhir section 1 */
 
+.kelebihan {
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+
+/* section 2 */
+
+.sec2 {
+    position: relative;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95vw;
+    justify-content: space-between;
+    align-items: center;
+    height: max-content;
+    display: flex;
+    padding: 30px 30px 50px 30px;
+    box-sizing: border-box;
+}
+
+.sec2 .card {
+    position: relative;
+    padding: 50px 3px;
+    text-align: center;
+    display: flex;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02), 
+                0 2px 4px rgba(0,0,0,0.02), 
+                0 4px 8px rgba(0,0,0,0.02), 
+                0 8px 16px rgba(0,0,0,0.02),
+                0 16px 32px rgba(0,0,0,0.02);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.sec2 .card img {
+    width: 80px;
+}
+
+.sec .card p {
+    font-weight: 500;
+}
+
+/* akhir section 2 */
+
+
+/* section - gallery */
+
+.flexbin {
+    position: relative;
+    width: 90vw;
+    height: max-content;
+    left: 65px;
+    margin-top: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* akhir section - gallery */
+
+
+/* section 3 */
+
+.sec3 {
+    position: relative;
+    width: 95vw;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 150px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    box-sizing: border-box;
+}
+
+.sec3 .daftarJadwal {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    height: max-content;
+}
+
+.sec3 .daftarJadwal table {
+    margin: 0 10px;
+}
+
+.sec3 .daftarJadwal table tr {
+    padding: 30px;
+}
+
+/* akhir section 3 */
+
 
 /* footer */
 
 .sec8 {
     position: relative;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 15px;
     overflow: hidden;
+    padding: 0;
     width: 96vw;
     border-radius: 10px;
-    height: max-content;
+    height: 450px;
     background-color: #228ecc;
+}
+
+.wrap-sec8 div {
+    width: 50%;
 }
 
 .sec8 i {
     font-size: 38px;
     border-radius: 5px;
-    padding: 10px;
     margin-right: 46px;
     margin-left: -15px;
     color: white;
@@ -323,9 +458,9 @@ nav ul li {
 
 .wrap-sec8 {
     display: flex;
-    padding: 90px 120px 20px 120px;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 }
 
 .list-footer {
@@ -353,8 +488,14 @@ nav ul li {
     width: 160px;
 }
 
+.list-sosmed {
+    width: 30%;
+}
+
 .list-footer div {
-    margin-left: 100px;
+    position: relative;
+    left: 0px;
+    margin-left: 30px;
     text-align: left;
 }
 
@@ -386,21 +527,10 @@ nav ul li {
     width: 140px;
     height: 140px;
     position: absolute;
-    left: 10px;
+    right: 10px;
     top: 15px;
     opacity: 0.9;
     z-index: 1;
-}
-
-.copyright {
-    width: 100vw;
-    height: 100px;
-    height: max-content;
-    text-align: left;
-    padding-bottom: 35px;
-    padding-left: 50px;
-    color: rgba(255, 255, 255, 0.849);
-    font-weight: bold;
 }
 
 /* akhor footer */
@@ -409,6 +539,29 @@ nav ul li {
 
 /* responsive device mobile */
 @media screen and (max-width: 756px) {
+
+    .secDecorations {
+        display: none;
+    }
+    
+    .secDecoration1 {
+        display: none;
+    }
+
+    .navbar ul li {
+        color: black;
+    }
+
+   .navbar ul {
+       margin-top: 20px;
+   }
+
+    .Pesan {
+        margin-left: 130px;
+        width: 180px;
+        z-index: 666;
+        text-align: center;
+    }
 
     .navbar {
         position: fixed;
@@ -441,8 +594,11 @@ nav ul li {
 
     .jumbotron .title-jumbotron {
         position: absolute;
-        margin-top: 80px;
-        left: 20px;
+        transform: translate(-50%, -50%);
+        width: 100vw;
+        left: 50%;
+        text-align: center;
+        top: 220px;
         text-shadow: 0 1px 1px rgba(0,0,0,0.12), 
                     0 2px 2px rgba(0,0,0,0.12), 
                     0 4px 4px rgba(0,0,0,0.12), 
@@ -450,6 +606,14 @@ nav ul li {
                     0 16px 16px rgba(0,0,0,0.12);
         font-size: 42px;
         color: white;
+    }
+
+    .jumbotron p {
+        position: relative;
+        transform: translate(-53.5%, -50%);
+        width: 90vw;
+        left: 50%;
+        margin-top: 390px;
     }
 
     .sec1 {
@@ -489,9 +653,10 @@ nav ul li {
 
     .chatButton {
         position: absolute;
+        transform: translate(-50%, -50%);
         z-index: 2;
-        left: 10px;
-        top: 63%;
+        left: 50%;
+        top: 67%;
         display: flex;
         align-items: center;
         width: max-content;
@@ -550,11 +715,110 @@ nav ul li {
         width: 100%;
     }
 
+    /* akhir section 1 */
+
+
+    /* section 2 */
+
+    .sec2 {
+        position: relative;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+        justify-content: space-between;
+        align-items: center;
+        height: max-content;
+        display: block;
+        padding: 30px 30px 50px 30px;
+        box-sizing: border-box;
+    }
+        
+    .sec2 .card {
+        position: relative;
+        margin-bottom: 33px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px 3px;
+        text-align: center;
+        display: flex;
+        width: 80vw;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.02), 
+                    0 2px 4px rgba(0,0,0,0.02), 
+                    0 4px 8px rgba(0,0,0,0.02), 
+                    0 8px 16px rgba(0,0,0,0.02),
+                    0 16px 32px rgba(0,0,0,0.02);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* akhir section 2*/
+
+        
+    /* section - gallery */
+
+    .flexbin {
+        position: relative;
+        width: 90vw;
+        height: max-content;
+        left: 22px;
+        margin-top: 300px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    /* akhir section - gallery */
+
+
+    /* section 3 */
+        
+    .sec3 {
+        position: relative;
+        width: 100vw;
+        margin: auto;
+        margin-bottom: 150px;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+        display: block;
+        padding: 10px 40px;
+        box-sizing: border-box;
+    }
+
+    .sec3 .daftarJadwal {
+        position: relative;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: space-between;
+        width: 100%;
+        height: max-content;
+    }
+
+    .sec3 .daftarJadwal table:nth-child(1) {
+        margin: 0px 0px 50px 0;
+    }
+
+    /* akhir section 3 */
+
+
     /* footer */
 
     .sec8 {
         position: relative;
         height: max-content;
+    }
+        
+    .wrap-sec8 div {
+        width: 100%;
     }
 
     .list-v {
@@ -580,20 +844,19 @@ nav ul li {
 
     .wrap-sec8 {
         display: flex;
-        width: 100vw;
-        flex-wrap: wrap;
-        padding: 90px 0px 50px 0 ;
-        justify-content: space-between;
-        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        padding: 0px 0px 0px 0 ;
     }
 
     .list-sosmed {
         display: flex;
+        width: 100%;
         flex-direction: column;
         justify-content: left;
         align-items: center;
     }
-
+    
     .list-footer {
         width: 100vw;
         text-align: left;

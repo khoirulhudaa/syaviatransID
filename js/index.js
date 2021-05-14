@@ -7,5 +7,5 @@ document.getElementById('comment').addEventListener('click', () => {
 })
 
 document.getElementById('btnDanger').addEventListener('click', () => {
-    document.getElementById('pageKonsultasi').classList.remove("pageKonsultasiOpen");
+    document.getElementById('pageKonsultasi').classList.remove```````````("pageKonsultasiOpen");
 })
