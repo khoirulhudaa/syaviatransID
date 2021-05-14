@@ -598,7 +598,7 @@ nav ul li {
 
     .jumbotron {
         position: relative;
-        height: 100vh;
+        height: max-content;
         background-image: url('../images/public/joshua-fernandez-RYdzjEVx_OE-unsplash.jpg');
         width: 100vw;
         background-size: cover;
@@ -736,6 +736,7 @@ nav ul li {
 
     .sec2 {
         position: relative;
+        height: max-content;
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
@@ -781,7 +782,7 @@ nav ul li {
         width: 90vw;
         height: max-content;
         left: 22px;
-        margin-top: 300px;
+        margin-top: 0px;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -801,6 +802,7 @@ nav ul li {
         justify-content: center;
         align-items: center;
         height: max-content;
+        overflow: auto;
         display: block;
         padding: 10px 40px;
         box-sizing: border-box;
@@ -811,7 +813,7 @@ nav ul li {
         margin: auto;
         display: flex;
         flex-direction: column;
-        overflow: hidden;
+        overflow-x: scroll;
         justify-content: space-between;
         width: 100%;
         height: max-content;
@@ -819,6 +821,10 @@ nav ul li {
 
     .sec3 .daftarJadwal table:nth-child(1) {
         margin: 0px 0px 50px 0;
+    }
+
+    .sec3 table {
+        overflow-x: scroll;
     }
 
     /* akhir section 3 */
