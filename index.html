@@ -12,31 +12,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./component/flexbin-master/flexbin.css">
     <title>Syaviatrans.Id</title>
 </head>
 <body class="animation">
 
-    <!-- navbar -->
+    <!-- navbar --> 
     
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <span class="navbar-brand"><img src="./images/logo/LOGO3.png" id="brand" alt="logo" class="logoNavbar"></span>
+            <span class="navbar-brand"><img src="./images/logo/LOGO4.png" id="brand" alt="logo" class="logoNavbar"></span>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse ml-auto" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active Pesan text-white" aria-current="page" href="#sec1">Pesan sekarang</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Paket travel
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#sec1">Reguler</a></li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal1"><a class="dropdown-item" href="#">Wisata</a></li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal2"><a class="dropdown-item" href="#">Rentcar</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#sec3">Jadwal</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#secFooter">Kontak</a>
                 </li>
             </ul>
             </div>
@@ -45,6 +54,87 @@
 
     <!-- akhir navbar -->
 
+    <!-- modal - pesan wisata -->
+
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Paket wisata</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputNumber" class="form-label">NO. TELEPHONE</label>
+                <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3 lokAntar">
+                <label for="exampleInputPassword1" class="form-label">WAKTU KEBERANGKATAN</label>
+                <input type="date" name="waktu_keberangkatan" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 lokAntar">
+                <label for="exampleInputPassword1" class="form-label">LOKASI JEMPUT</label>
+                <input type="text" name="lokasi_jemput" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 lokAntar">
+                <label for="exampleInputPassword1" class="form-label">LOKASI ANTAR</label>
+                <input type="text" name="lokasi_antar" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 lokAntar">
+                <label for="exampleInputPassword1" class="form-label">JUMLAH PENUMPANG</label>
+                <input type="number" name="jumlah_penumpang" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-send  btn-primary">PESAN SEKARANG</button>
+          </form>
+         </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- akhir modal - pesan wisata -->
+
+
+    <!-- modal - pesan rentcar -->
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Paket rentcar</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputNumber" class="form-label">NO. TELEPHONE</label>
+                <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3 lokAntar">
+              <label for="exampleInputPassword1" class="form-label">WAKTU KEBERANGKATAN</label>
+              <input type="date" name="waktu_keberangkatan" class="form-control" id="exampleInputPassword1">
+          </div>
+            <div class="mb-3 lokAntar">
+                <label for="exampleInputPassword1" class="form-label">LOKASI JEMPUT</label>
+                <input type="text" name="lokasi_jemput" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 lokAntar">
+                <label for="exampleInputPassword1" class="form-label">LOKASI ANTAR</label>
+                <input type="text" name="lokasi_antar" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 lokAntar">
+                <label for="exampleInputPassword1" class="form-label">JUMLAH PENUMPANG</label>
+                <input type="number" name="jumlah_penumpang" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-send  btn-primary">PESAN SEKARANG</button>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- akhir modal - pesan rentcar -->
+
 
     <!-- jumbotron -->
       
@@ -52,90 +142,210 @@
           <div class="container">
               <h1 class="title-jumbotron">
                 Kemanapun dan dimanapun <br> Kami datang kami antar
-                <br>
               </h1>
+              <p>Pesan travel kami melalui smartphone. Dan terimalah semua layanan antar maupun jemput dari mobil kami yang akan bekerja cepat, tepat, aman dan mengutaman kenyamanan setiap penumpang.</p>
               <div class="chatButton">
-                <div class="comment v-animation-ping" id="comment"><i class="far fa-comments"></i></div>
+                <a href="#"><div class="comment v-animation-ping" id="comment"><i class="fab fa-instagram"></i></div></a>
+                <a href="#"><div class="comment2 v-animation-ping" id="comment2"><i class="fas fa-globe"></i></div></a>
                 <a style="color: black;" href="https://api.whatsapp.com/send?phone=6289513093406&text=Hallo"><div class="wa"><i class="fab fa-whatsapp"></i></div></a>
-              </div>
-              <div class="pageKonsultasi animate__animated animate__fadeInRight" id="pageKonsultasi">
-                <small>berikan pertanyaan anda agar kami bantu menjawab</small>
-                <textarea type="text" value=""></textarea>
-                <br>
-                <div class="d-flex">
-                  <button class="btn btn-primary">kirim</button>
-                  <button class="btn btn-danger btn-closes" id="btnDanger">tutup</button>
-                </div>
               </div>
           </div>
       </div>
         
     <!-- akhir jumbotron -->
 
-    <div class="secDecoration secDecoration1"></div>
-    <div class="secDecoration secDecoration2"></div>
-    <div class="secDecoration secDecoration3"></div>
 
     <!-- section 1 -->
-
-    <section class="sec1">
-        <div class="secSide secSide1">
+    <h2 class="kelebihan ml-auto mr-auto text-center">Pesan sekarang (reguler)</h2>
+    
+    <section class="sec1" id="sec1">
+      <div class="secSide secSide1">
           <!-- form -->
-          <form>
-            <div class="mb-3">
+      <form>
+          <div class="mb-3">
             <label for="exampleInputNumber" class="form-label">NO. TELEPHONE</label>
             <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">WAKTU KEBERANGKATAN</label>
-          <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-        <div class="mb-3">
-          <label for="selects" class="form-label">LOKASI JEMPUT</label>
-          <select class="form-select" id="selects" aria-label="Default select example">
-            <option value="">PILIH LOKASI PENJEMPUTAN</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+          <label for="selects" class="form-label">WAKTU KEBERANGKATAN</label>
+          <select class="form-select" name="waktu_keberangkatan" id="selects" aria-label="Default select example">
+            <option value="Jember-juanda/Surabaya - 06.00 (pagi)">Jember-juanda/Surabaya - 06.00 (pagi)</option>
+            <option value="Jember-juanda/Surabaya - 09.00 (pagi)">Jember-juanda/Surabaya - 09.00 (pagi)</option>
+            <option value="Jember-juanda/Surabaya - 21.00 (malam)">Jember-juanda/Surabaya - 21.00 (malam)</option>
+            <option value="Surabaya/Juanda-Jember - 07.00 (pagi)">Surabaya/Juanda-Jember - 07.00 (pagi)</option>
+            <option value="Surabaya/Juanda-Jember - 13.00 (siang)">Surabaya/Juanda-Jember - 13.00 (siang)</option>
+            <option value="Surabaya/Juanda-Jember - 13.00 (siang)">Surabaya/Juanda-Jember - 13.00 (siang)</option>
           </select>
         </div>
         <div class="mb-3 lokAntar">
+            <label for="exampleInputPassword1" class="form-label">LOKASI JEMPUT</label>
+            <input type="text" name="lokasi_jemput" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 lokAntar">
             <label for="exampleInputPassword1" class="form-label">LOKASI ANTAR</label>
-            <input type="text" class="form-control" id="exampleInputPassword1">
+            <input type="text" name="lokasi_antar" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 lokAntar">
+            <label for="exampleInputPassword1" class="form-label">JUMLAH PENUMPANG</label>
+            <input type="number" name="jumlah_penumpang" class="form-control" id="exampleInputPassword1">
         </div>
         <button type="submit" class="btn btn-send  btn-primary">PESAN SEKARANG</button>
       </form>
       <!-- akhir form -->
     </div>
-
-    <div class="secSide secSide2">
-      <div class="card" style="width: 18rem;height: max-content;border-radius: 7px;">
-        <img src="./images/public/City driver-pana.png" class="card-img-top" alt="logo-car">
-        <div class="card-body">
-          <h5 class="card-title" style="font-weight: bold;">Tentang kami</h5>
-          <p class="card-text" style="font-weight: 500;">jemput, antar dan konsultasi kepada kami. Pelayanan terpercaya dan dapat diandalkan.</p>
-        </div>
-      </div>
-    </div>
       
     </section>
     <!-- akhir section 1 -->
+    
+    <!-- section 2 -->
+    <h2 class="kelebihan ml-auto mr-auto text-center" id="sec2">Pelayanan dan kelebihan kami</h2>
+    
+    <div class="secDecoration secDecorations"></div>
+    <div class="secDecoration secDecoration1"></div>
+    <div class="secDecoration secDecoration2"></div>
+    <div class="secDecoration secDecoration3"></div>
+    
+    <section class="sec2">
+      <div class="card">
+        <img src="./images/icon/Group 1 (2).png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Nyaman</h5>
+          <br>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card" >
+        <img src="./images/icon/fast.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Cepat dan tepat</h5>
+          <br>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./images/icon/Group 3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Harga bersahabt</h5>
+          <br>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./images/icon/Group 4.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>Aman dan terjamin</h5>
+          <br>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- akhir section 2 -->
+
+    
+    <!-- section - gallery -->
+    <h2 class="kelebihan ml-auto mr-auto text-center" id="sec2">Gellery kami</h2>
+    
+    <div class="flexbin flexbin-margin">
+      <a href="#">
+          <img src="./images/public/20210306_165541.jpg" />
+      </a>
+      <a href="#">
+          <img src="./images/public/20210115_162555.jpg" />
+      </a>
+      <a href="#">
+          <img src="./images/public/20210512_145942.jpg" />
+      </a>
+      <a href="#">
+          <img src="./images/public/IMG-20210512-WA0061.jpg" />
+      </a>
+      <a href="#">
+          <img src="./images/public/IMG-20210512-WA0064.jpg" />
+      </a>
+      <a href="#">
+          <img src="./images/public/20201228_113640.jpg" />
+      </a>
+    </div>
+
+    <!-- akhir section - gallery -->
+
+
+    <!-- section 3 -->
+    <h2 class="kelebihan ml-auto mr-auto text-center" style="top: 40px;position: relative;" id="sec3">Daftar jadwal reguler</h2>
+
+    <section class="sec3">
+      <div class="daftarJadwal">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Jurusan</th>
+              <th scope="col">Waktu</th>
+              <th scope="col">Jam</th>
+              <th scope="col">Harga</th> 
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Jember-juanda/Surabaya</th>
+              <td>Pagi</td>
+              <td>06.00</td>
+              <td>250.000</td>
+            </tr>
+            <tr>
+              <th scope="row">Jember-juanda/Surabaya</th>
+              <td>Pagi</td>
+              <td>09.00</td>
+              <td>220.000</td>
+            </tr>
+            <tr>
+              <th scope="row">Jember-juanda/Surabaya</th>
+              <td>Malam</td>
+              <td>21.00</td>
+              <td>180.000</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Jurusan</th>
+              <th scope="col">Waktu</th>
+              <th scope="col">Jam</th>
+              <th scope="col">Harga</th> 
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Surabaya/Juanda-Jember</th>
+              <td>Pagi</td>
+              <td>07.00</td>
+              <td>250.000</td>
+            </tr>
+            <tr>
+              <th scope="row">Surabaya/Juanda-Jember</th>
+              <td>Siang</td>
+              <td>13.00</td>
+              <td>220.000</td>
+            </tr>
+            <tr>
+              <th scope="row">Surabaya/Juanda-Jember</th>
+              <td>Sore</td>
+              <td>17.00</td>
+              <td>180.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- akhir section 3 -->
 
     <!-- footer -->
 
-    <section class="sec8">
+    <section class="sec8" id="secFooter">
       <div class="wrap-sec8">
           <div class="list-sosmed">
-            <div class="list-v d-flex">
-              <a href="#" class="valclass-footer1" target="_blank">
-                <img src="./images/logo/LOGO3.png">
-              </a>
-            </div>
-            <br>           
-              <div style="margin-left: 20px;">
-                  <a href="https://web.facebook.com/profile.php?id=100019386025874" target="_blank"></a><i class="fab fa-facebook fb"></i>
-                  <a href="https://api.whatsapp.com/send?phone=+6289513093406&text=Halo" target="_blank"></a><i class="fab fa-instagram yt"></i>
-              </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63185.87134593717!2d113.61867777689973!3d-8.190971733847139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695d4ce8dcae1%3A0x4d98732d4f7c218b!2sPesona%20RAIA%20Wisata%20Jaya%20Gemilang!5e0!3m2!1sid!2sid!4v1620975315798!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
           <div class="list-footer">
               <div>
@@ -157,15 +367,33 @@
               </div>
           </div>
       </div>
-      <div class="copyright">
-        <small class="copy">Copyright &copy; 2021 Syaviatrans.</a> All Rights Reserved</small>
-      </div>
       <div class="sec8-dek1"></div>
     </section>
 
+
     <!-- akhir footer -->
+<script src="./js/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
-<script src="./js/index.js"></script>
+<script src="./component/dist/sweetalert2.all.min.js"></script>
+
+    <script>
+      const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 5000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    })
+
+    Toast.fire({
+      icon: 'success',
+      title: 'Selamat datang!'
+    })
+    </script>
 </body>
 </html>

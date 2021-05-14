@@ -182,13 +182,27 @@ nav ul li {
                 transition: 0.3s;
 }
 
+.chatButton a {
+    color: black;
+}
+
 .chatButton .comment {
     width: max-content;
     background: rgb(255, 255, 255);
     margin: 0 15px;
     height: max-content;
     border-radius: 100px;
-    padding: 14px 18px;
+    padding: 14px 21px;
+    cursor: pointer;
+}
+
+.chatButton .comment2 {
+    width: max-content;
+    background: rgb(255, 255, 255);
+    margin: 0 15px;
+    height: max-content;
+    border-radius: 100px;
+    padding: 14px 20px;
     cursor: pointer;
 }
 
