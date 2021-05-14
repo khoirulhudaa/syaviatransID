@@ -609,10 +609,10 @@ nav ul li {
     .jumbotron .title-jumbotron {
         position: absolute;
         transform: translate(-50%, -50%);
-        width: 100vw;
+        width: 96vw;
         left: 50%;
         text-align: center;
-        top: 220px;
+        top: 190px;
         text-shadow: 0 1px 1px rgba(0,0,0,0.12), 
                     0 2px 2px rgba(0,0,0,0.12), 
                     0 4px 4px rgba(0,0,0,0.12), 
@@ -627,7 +627,7 @@ nav ul li {
         transform: translate(-53.5%, -50%);
         width: 90vw;
         left: 51%;
-        margin-top: 410px;
+        margin-top: 385px;
     }
 
     .sec1 {
@@ -670,7 +670,7 @@ nav ul li {
         transform: translate(-50%, -50%);
         z-index: 2;
         left: 44%;
-        margin-top: 0px;
+        margin-top: -15px;
         margin-bottom: 50px;
         display: flex;
         align-items: center;
