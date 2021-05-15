@@ -67,13 +67,22 @@ section {
 .Pesan {
     position: absolute;
     margin-top: 0px;
-    margin-left: -160px;
+    margin-left: -170px;
     background-color: #228ecc;
     border-radius: 50px;
+    width: 170px;
     padding: 7px;
     font-size: 18px;
     font-weight: 500;
+    cursor: pointer;    
+    text-align: center;
     color: white;
+    transition: 0.3s;
+}
+
+.Pesan:hover {
+    filter: brightness(90%);
+    transition: 0.3s;
 }
 
 .navbar-toggler:focus {
