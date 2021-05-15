@@ -554,9 +554,15 @@ nav ul li {
     background-color: #228ecc;
 }
 
+.alamat {
+    position: relative;
+    width: 100%;
+    top: 90px;
+}
 
 .wrap-sec8 div {
     height: 100%;
+    overflow: hidden;
 }
 
 .sec8 i {
@@ -615,6 +621,13 @@ nav ul li {
     padding: 40px;
 }
 
+.fa-map-marker-alt {
+    position: relative;
+    left: 25px;
+    top: 12px;
+    width: 20%;
+}
+
 .list-sosmed small {
     color: white;
 }
@@ -632,7 +645,12 @@ nav ul li {
 }
 
 .list-footer div:nth-child(2) {
-    margin-left: 100px;
+    margin-left: 90px;
+}
+
+.list-footer div:nth-child(3) {
+    margin-left: 50px;
+    z-index: 3;
 }
 
 .list-footer h2 {
@@ -933,7 +951,7 @@ nav ul li {
         height: max-content;
         overflow: auto;
         display: block;
-        padding: 10px 40px;
+        padding: 10px 20px;
         box-sizing: border-box;
     }
     
@@ -972,6 +990,11 @@ nav ul li {
         position: relative;
         height: max-content;
     }
+
+    .medsos {
+        position: relative;
+        left: 20px;
+    }
         
     .wrap-sec8 div {
         width: 100%;
@@ -1007,9 +1030,20 @@ nav ul li {
 
     .list-sosmed {
         display: flex;
+        text-align: center;
         width: 100%;
         flex-direction: column;
-        justify-content: left;
+        justify-content: center;
+    }
+
+    .fa-map-marker-alt {
+        margin-top: -10px;
+    }
+
+    .alamat {
+        position: relative;
+        top: 0;
+        left: 0;
     }
     
     .list-footer {
@@ -1031,7 +1065,10 @@ nav ul li {
     }
 
     .wrap-sec8 img {
+        position: relative;
         width: 150px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .list-footer div {
