@@ -427,6 +427,13 @@ nav ul li {
     padding: 10px;
 }
 
+.btn-send2 {
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 10px;
+}
+
 /* akhir section 1 */
 
 .kelebihan {
