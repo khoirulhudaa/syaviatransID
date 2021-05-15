@@ -734,7 +734,7 @@ nav ul li {
         width: 96vw;
         left: 50%;
         text-align: center;
-        top: 190px;
+        top: 180px;
         text-shadow: 0 1px 1px rgba(0,0,0,0.12), 
                     0 2px 2px rgba(0,0,0,0.12), 
                     0 4px 4px rgba(0,0,0,0.12), 
@@ -749,7 +749,7 @@ nav ul li {
         transform: translate(-53.5%, -50%);
         width: 90vw;
         left: 51%;
-        margin-top: 395px;
+        margin-top: 385px;
     }
 
     .sec1 {
