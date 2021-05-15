@@ -738,7 +738,7 @@ nav ul li {
                     0 4px 4px rgba(0,0,0,0.12), 
                     0 8px 8px rgba(0,0,0,0.12),
                     0 16px 16px rgba(0,0,0,0.12);
-        font-size: 42px;
+        font-size: 35px;
         color: white;
     }
 
@@ -747,7 +747,7 @@ nav ul li {
         transform: translate(-53.5%, -50%);
         width: 90vw;
         left: 51%;
-        margin-top: 385px;
+        margin-top: 395px;
     }
 
     .sec1 {
@@ -790,7 +790,7 @@ nav ul li {
         transform: translate(-50%, -50%);
         z-index: 2;
         left: 44%;
-        margin-top: -15px;
+        margin-top: -10px;
         margin-bottom: 50px;
         display: flex;
         align-items: center;
@@ -894,6 +894,10 @@ nav ul li {
         align-items: center;
     }
 
+    .sec2 .card:nth-child(4) {
+        margin-bottom: 0;
+    }
+
     /* akhir section 2*/
 
         
@@ -904,7 +908,6 @@ nav ul li {
         width: 90vw;
         height: max-content;
         left: 22px;
-        margin-top: 0px;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -919,8 +922,9 @@ nav ul li {
     .sec3 {
         position: relative;
         width: 100vw;
-        margin: auto;
-        margin-bottom: 150px;
+        margin-left: auto;
+        margin-top: -100px;
+        margin-bottom: 30px;
         justify-content: center;
         align-items: center;
         height: max-content;
@@ -1002,8 +1006,12 @@ nav ul li {
     .list-footer {
         width: 100vw;
         text-align: left;
-        display: flex;
-        flex-wrap: wrap;
+        display: block;
+    }
+
+    .kontak {
+        position: absolute;
+        left: -100px;    
     }
 
     .fb {
@@ -1021,7 +1029,7 @@ nav ul li {
     .list-footer div {
         margin-top: 40px;
         margin-right: 50px;
-        margin-left: 30px;
+        margin-left: 0px;
         text-align: left;
     }
 
