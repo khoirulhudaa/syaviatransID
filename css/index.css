@@ -997,11 +997,6 @@ nav ul li {
         position: relative;
         height: max-content;
     }
-
-    .medsos {
-        position: relative;
-        left: 20px;
-    }
         
     .wrap-sec8 div {
         width: 100%;
@@ -1054,10 +1049,25 @@ nav ul li {
     .list-sosmed p {
         display: none;
     }
+    
+    .medsos {
+        position: relative;
+        left: 28px;
+    }
 
     .info {
         position: relative;
         left: -1px;
+    }
+
+    .kontak {
+        position: relative;
+        left: 4px;
+    }
+
+    .kontaks ul {
+        position: relative;
+        left: 9px;
     }
     
     .list-footer {
