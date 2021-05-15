@@ -1044,13 +1044,20 @@ nav ul li {
     }
 
     .fa-map-marker-alt {
-        margin-top: -10px;
+        display: none
     }
 
-    .alamat {
+    .fa-map-marker-alt:before {
+        display: none;
+    }
+
+    .list-sosmed p {
+        display: none;
+    }
+
+    .info {
         position: relative;
-        top: 0;
-        left: 0;
+        left: -1px;
     }
     
     .list-footer {
