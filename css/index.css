@@ -553,6 +553,7 @@ nav ul li {
     background-color: #228ecc;
 }
 
+
 .wrap-sec8 div {
     height: 100%;
 }
@@ -673,6 +674,7 @@ nav ul li {
 
 /* responsive device mobile */
 @media screen and (max-width: 756px) {
+
 
     .secDecorations {
         display: none;
@@ -1005,13 +1007,12 @@ nav ul li {
     
     .list-footer {
         width: 100vw;
-        text-align: left;
-        display: block;
-    }
-
-    .kontak {
-        position: absolute;
-        left: -100px;    
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        height: 100%;
+        padding: 45px 0px;
     }
 
     .fb {
@@ -1026,9 +1027,14 @@ nav ul li {
         width: 150px;
     }
 
+    .list1 {
+        position: absolute;
+        left: 100px;
+    }
+
     .list-footer div {
         margin-top: 40px;
-        margin-right: 50px;
+        margin-right: 0px;
         margin-left: 0px;
         text-align: left;
     }
