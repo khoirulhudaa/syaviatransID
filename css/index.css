@@ -13,6 +13,43 @@ body {
     overflow-x: hidden; 
 }
 
+.toTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    background-color: #054c75;
+    box-shadow: 0 1px 2px #00000005, 
+                0 2px 4px rgba(0,0,0,0.1), 
+                0 4px 8px rgba(0,0,0,0.2), 
+                0 8px 16px rgba(0,0,0,0.3),
+                0 16px 32px rgba(0,0,0,0.011);
+    z-index: 98;
+    color: white;
+    cursor: pointer;
+}
+
+.toTop i {
+    animation: tp 2s infinite ease-in-out;
+}
+
+@keyframes tp {
+    0% {
+        position: relative;
+        top: 0;
+    }
+    50% {
+        position: relative;
+        top: 5px;
+    }
+    100% {
+        position: relative;
+        top: 0;
+    }
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -39,20 +76,25 @@ section {
     color: white;
 }
 
+.navbar-toggler:focus {
+    border: none;
+    outline: none;
+}
+
 .navbar {
     position: fixed;
     top: 0;
     width: 100vw;
+    height: auto;
     z-index: 333;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 15px 30px;
     box-sizing: border-box;
     background-color: #fff;
     box-shadow: 0 1px 2px rgba(0,0,0,0.02), 
-    0 2px 4px rgba(0,0,0,0.02), 
-    0 4px 8px rgba(0,0,0,0.02), 
-    0 8px 16px rgba(0,0,0,0.02),
-    0 16px 32px rgba(0,0,0,0.02)
+                0 2px 4px rgba(0,0,0,0.02), 
+                0 4px 8px rgba(0,0,0,0.02), 
+                0 8px 16px rgba(0,0,0,0.02),
+                0 16px 32px rgba(0,0,0,0.02)
 }
 
 nav ul li {
@@ -68,6 +110,8 @@ nav ul li {
 }
 
 .logoNavbar {
+    position: absolute;
+    top: -17px;
     width: 100px;
     cursor: pointer;
 }
@@ -184,6 +228,51 @@ nav ul li {
 
 .chatButton a {
     color: black;
+}
+
+#comment {
+    animation: cm1 1s linear;
+}
+
+#comment2 {
+    animation: cm2 1.5s linear;
+}
+
+#comment3 {
+    animation: cm3 2s linear;
+}
+
+@keyframes cm1 {
+    from {
+        position: relative;
+        transform: scale(0);
+    }
+    to {
+        position: relative;
+        transform: scale(1);
+    }
+}
+
+@keyframes cm2 {
+    from {
+        position: relative;
+        transform: scale(0);
+    }
+    to {
+        position: relative;
+        transform: scale(1);
+    }
+}
+
+@keyframes cm3 {
+    from {
+        position: relative;
+        transform: scale(0);
+    }
+    to {
+        position: relative;
+        transform: scale(1);
+    }
 }
 
 .chatButton .comment {
@@ -360,6 +449,7 @@ nav ul li {
     display: flex;
     border-radius: 12px;
     border: none;
+    width: 30%;
     outline: none;
     background-color: #fff;
     box-shadow: 0 1px 2px rgba(0,0,0,0.02), 
@@ -395,7 +485,11 @@ nav ul li {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
 
+.flexbin img:hover {
+    transition: 0.3s ease-in;
+    filter: brightness(70%);
 }
 
 /* akhir section - gallery */
@@ -441,10 +535,9 @@ nav ul li {
 .sec8 {
     position: relative;
     margin: auto;
-    margin-top: 0px;
+    margin-top: 110px;
     margin-bottom: 15px;
     overflow: hidden;
-    padding: 0;
     width: 96vw;
     border-radius: 10px;
     height: 450px;
@@ -452,7 +545,7 @@ nav ul li {
 }
 
 .wrap-sec8 div {
-    width: 50%;
+    height: 100%;
 }
 
 .sec8 i {
@@ -475,6 +568,7 @@ nav ul li {
     justify-content: space-between;
     align-items: center;
     padding: 0;
+    height: 100%;
 }
 
 .list-footer {
@@ -504,6 +598,19 @@ nav ul li {
 
 .list-sosmed {
     width: 30%;
+    background-color: #1585c5;
+    height: 100%;
+    display: block;
+    padding: 40px;
+}
+
+.list-sosmed small {
+    color: white;
+}
+
+.list-footer {
+    padding: 45px 40px;
+    width: 70%;
 }
 
 .list-footer div {
@@ -511,6 +618,10 @@ nav ul li {
     left: 0px;
     margin-left: 30px;
     text-align: left;
+}
+
+.list-footer div:nth-child(2) {
+    margin-left: 100px;
 }
 
 .list-footer h2 {
