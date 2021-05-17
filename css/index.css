@@ -1,6 +1,8 @@
 * {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    border: none;
+    outline: none;
 }
 
 html {
@@ -720,6 +722,7 @@ nav ul li {
 
    .navbar ul {
        margin-top: 20px;
+       margin-left: 10px;
    }
 
     .Pesan {
