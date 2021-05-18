@@ -479,6 +479,7 @@ nav ul li {
     padding: 50px 3px;
     text-align: center;
     display: flex;
+    height: 370px;
     border-radius: 12px;
     border: none;
     width: 30%;
