@@ -1236,9 +1236,10 @@ nav ul li {
     }
 
     .list-footer div {
+        position: relative;
         margin-top: 40px;
         margin-right: 0px;
-        margin-left: 0px;
+        left: -20px;
         text-align: left;
     }
 
