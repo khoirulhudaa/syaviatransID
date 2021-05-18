@@ -5,8 +5,17 @@
     outline: none;
 }
 
+.fa-arrow-right {
+    position: relative;
+    top: 3px;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+tr {
+    width: 100px;
 }
 
 body {
@@ -498,6 +507,7 @@ nav ul li {
 
 /* sec paket */
 .sec-paket {
+    margin-top: 50px;
     width: 100vw;
     height: max-content;
 }
@@ -590,15 +600,17 @@ nav ul li {
 
 .sec3 {
     position: relative;
-    width: 95vw;
+    width: 100vw;
     height: max-content;
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 80px;
+    margin-top: 0px;
     margin-bottom: 150px;
     justify-content: center;
     align-items: center;
-    padding: 10px 40px;
+    padding: 10px 0px;
     box-sizing: border-box;
 }
 
@@ -610,13 +622,10 @@ nav ul li {
     height: max-content;
 }
 
-.sec3 .daftarJadwal table {
-    margin: 0 10px;
+.daftarJadwal table {
+    margin: 0 15px;
 }
 
-.sec3 .daftarJadwal table tr {
-    padding: 30px;
-}
 
 /* akhir section 3 */
 
@@ -1107,6 +1116,10 @@ nav ul li {
     }
 
     .sec3 .daftarJadwal table:nth-child(1) {
+        margin: 0px 0px 50px 0;
+    }
+
+    .sec3 .daftarJadwal table:nth-child(2) {
         margin: 0px 0px 50px 0;
     }
 
