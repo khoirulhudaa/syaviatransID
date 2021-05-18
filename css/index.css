@@ -544,7 +544,9 @@ nav ul li {
 }
 
 .sec-paket .wrap-sec-paket img {
-    width: 80%;
+    width: 93%;
+    position: relative;
+    left: -40px;
 }
 
 .sec-paket .wrap-sec-paket h2 {
@@ -556,6 +558,7 @@ nav ul li {
 .sec-paket .wrap-sec-paket p {
     padding: 20px;
     width: 85%;
+    margin-left: -20px;
 }
 
 
@@ -1002,6 +1005,10 @@ nav ul li {
 
     /* sec-paket */
 
+    .sec-paket {
+        margin-bottom: 50px;
+    }
+
         
     .sec-paket .wrap-sec-paket {
         display: flex;
@@ -1019,10 +1026,11 @@ nav ul li {
         text-align: center;
         align-items: center;
     }
-        
+    
     .sec-paket .wrap-sec-paket img {
         width: 100%;
-        margin-left: -50px;
+        margin-left: 0px;
+        background-image: url('../images/icon/Checking boxes-amico.png');
     }
 
     .sec-paket .wrap-sec-paket h2 {
@@ -1040,7 +1048,7 @@ nav ul li {
 
     .sec-paket .wrap-sec-paket p {
         padding: 0px;
-        width: 100%;
+        width: 80%;
     }
 
 
