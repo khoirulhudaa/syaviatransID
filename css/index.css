@@ -496,6 +496,71 @@ nav ul li {
 
 /* akhir section 2 */
 
+/* sec paket */
+.sec-paket {
+    width: 100vw;
+    height: max-content;
+}
+
+.sec-paket .wrap-sec-paket {
+    display: flex;
+    width: 100%;
+    height: max-content;
+}
+
+.sec-paket .wrap-sec-paket div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.paket-images {
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    width: 50%;
+}
+
+.paket-content {
+    width: 50%;
+}
+
+.paket-content h3 {
+    font-size: 20px;
+    background-color: rgb(0, 104, 240);
+    color: white;
+    border-radius: 30px;
+    text-align: left;
+    width: max-content;
+    padding: 5px 30px 5px 12px;
+}
+
+.paket-images {
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+}
+
+.sec-paket .wrap-sec-paket img {
+    width: 80%;
+}
+
+.sec-paket .wrap-sec-paket h2 {
+    position: relative;
+    padding: 20px;
+    left: -25px;
+}
+
+.sec-paket .wrap-sec-paket p {
+    padding: 20px;
+    width: 85%;
+}
+
+
+/* akhir  sec paket */
+
 
 /* section - gallery */
 
@@ -934,6 +999,52 @@ nav ul li {
     }
 
     /* akhir section 2*/
+
+    /* sec-paket */
+
+        
+    .sec-paket .wrap-sec-paket {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+    }
+
+    .sec-paket .wrap-sec-paket div {
+        padding: 10px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+        
+    .sec-paket .wrap-sec-paket img {
+        width: 100%;
+        margin-left: -50px;
+    }
+
+    .sec-paket .wrap-sec-paket h2 {
+        padding: 0px;
+        width: 100%;
+        margin-left: 43px;
+        margin-bottom: 25px;
+    }
+
+    .sec-paket .wrap-sec-paket h3 {
+        padding: 5px;
+        width: 60%;
+        text-align: center;
+    }
+
+    .sec-paket .wrap-sec-paket p {
+        padding: 0px;
+        width: 100%;
+    }
+
+
+    /* akhir sec-paket */
 
         
     /* section - gallery */
