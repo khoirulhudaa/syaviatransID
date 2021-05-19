@@ -385,6 +385,7 @@
     </div>
     <section class="sec1" id="sec1">
       <div class="secSide secSide1">
+        <h3 id="pakeType">Reguler</h3>
           <!-- form -->
       <form>
           <div class="mb-3">
@@ -511,6 +512,7 @@
     document.getElementById('penumpang').classList.remove('none');
     document.getElementById('keberangkatan1').classList.remove('none');
     document.getElementById('keberangkatan2').classList.add('none');
+    document.getElementById('pakeType').innerText = "Reguler";
   })
   
   // untuk paket barang
@@ -519,6 +521,7 @@
     document.getElementById('penumpang').classList.toggle('none');
     document.getElementById('keberangkatan2').classList.remove('none');
     document.getElementById('keberangkatan1').classList.add('none');
+    document.getElementById('pakeType').innerText = "Barang";
   })
   
   // untuk paket wisata
@@ -527,6 +530,7 @@
     document.getElementById('keberangkatan2').classList.toggle('none');
     document.getElementById('dimensi').classList.add('none');
     document.getElementById('penumpang').classList.remove('none');
+    document.getElementById('pakeType').innerText = "Wisata";
   })
   
   // untuk paket rentcar
@@ -535,6 +539,7 @@
     document.getElementById('keberangkatan2').classList.toggle('none');
     document.getElementById('dimensi').classList.add('none');
     document.getElementById('penumpang').classList.remove('none');
+    document.getElementById('pakeType').innerText = "Rentcar";
   })
 </script>
 

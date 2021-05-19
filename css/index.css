@@ -451,6 +451,20 @@ nav ul li {
     margin-top: 50px;
 }
 
+#pakeType {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    background-color: #fff;
+    color: black;
+    font-size: 14px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
 .sec1 label {
     color: white;
     text-align: center;
