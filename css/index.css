@@ -1241,8 +1241,10 @@ nav ul li {
 
     .list-sosmed {
         display: flex;
-        text-align: center;
+        text-align: left;
         width: 100%;
+        position: relative;
+        left: -9px;
         flex-direction: column;
         justify-content: center;
     }
@@ -1296,8 +1298,8 @@ nav ul li {
     .wrap-sec8 img {
         position: relative;
         width: 150px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 4px;
+        margin-right: 0;
     }
 
     .list-footer div {
