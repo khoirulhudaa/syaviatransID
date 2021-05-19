@@ -5,6 +5,14 @@
     outline: none;
 }
 
+.none {
+    display: none;
+}
+
+.inline {
+    display: inline;
+}
+
 .fa-arrow-right {
     position: relative;
     top: 3px;
@@ -321,7 +329,7 @@ nav ul li {
 
 .chatButton .wa {
     width: max-content;
-    background: rgb(255, 255, 255);
+    background: rgb(77, 243, 0);
     margin: 0 15px;
     height: max-content;
     border-radius: 100px;
@@ -338,6 +346,22 @@ nav ul li {
     transition: 0.3s;
     filter: brightness(90%);
 }
+
+/* button list */
+
+.button-list {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: max-content;
+    align-items: center;
+}
+
+.button-list button {
+    margin: 0 10px;
+}
+
+/* ahir button list */
 
 /* section 1 */
 
@@ -421,7 +445,9 @@ nav ul li {
 .sec1 form div:nth-child(4),
 .sec1 form div:nth-child(3), 
 .sec1 form div:nth-child(5), 
-.sec1 form div:nth-child(6) {
+.sec1 form div:nth-child(6),
+.sec1 form div:nth-child(7),
+.sec1 form div:nth-child(8) {
     margin-top: 50px;
 }
 
