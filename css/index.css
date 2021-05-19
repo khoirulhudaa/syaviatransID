@@ -358,7 +358,9 @@ nav ul li {
 }
 
 .button-list button {
-    margin: 0 10px;
+    margin: 0px 10px;
+    color: white;
+    background-color: #228ecc;
 }
 
 /* ahir button list */
@@ -837,6 +839,21 @@ nav ul li {
         text-align: center;
         padding: 10px 15px;
         font-weight: bold;
+    }
+
+    .button-list {
+        width: 100vw;
+        display: flex;
+        justify-content: left;
+        height: max-content;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .button-list button {
+        margin: 5px 10px;
+        color: white;
+        background-color: #228ecc;
     }
 
     .secDecorations {
