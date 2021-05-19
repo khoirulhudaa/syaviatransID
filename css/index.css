@@ -824,7 +824,20 @@ nav ul li {
 
 /* responsive device mobile */
 @media screen and (max-width: 756px) {
-
+        
+    #pakeType {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        background-color: #fff;
+        color: black;
+        font-size: 10px;
+        border-radius: 30px;
+        text-align: center;
+        padding: 10px 15px;
+        font-weight: bold;
+    }
 
     .secDecorations {
         display: none;
