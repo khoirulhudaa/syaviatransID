@@ -689,8 +689,13 @@ nav ul li {
 
 .alamat {
     position: relative;
+    top: 14px;
     width: 100%;
-    top: 90px;
+    height: max-content;
+}
+
+.alamat p {
+    font-size: 14px;
 }
 
 .wrap-sec8 div {
@@ -752,13 +757,6 @@ nav ul li {
     height: 100%;
     display: block;
     padding: 40px;
-}
-
-.fa-map-marker-alt {
-    position: relative;
-    left: 25px;
-    top: 12px;
-    width: 20%;
 }
 
 .list-sosmed small {
@@ -1257,9 +1255,6 @@ nav ul li {
         display: none;
     }
 
-    .list-sosmed p {
-        display: none;
-    }
     
     .medsos {
         position: relative;
