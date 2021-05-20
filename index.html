@@ -462,7 +462,7 @@
     <section class="sec8" id="secFooter">
       <div class="wrap-sec8">
         <div class="list-sosmed">
-          <h2 class="text-white">Didukung oleh</h2>
+          <h2 class="text-white">Didukung oleh---</h2>
           <br>
           <br>
           <img src="./images/logo/support1.PNG" alt="">
@@ -536,8 +536,8 @@
   
   // untuk paket wisata
   document.getElementById('wisata').addEventListener('click', () => {
-    document.getElementById('keberangkatan1').classList.toggle('none');
-    document.getElementById('keberangkatan2').classList.toggle('none');
+    document.getElementById('keberangkatan1').classList.add('none');
+    document.getElementById('keberangkatan2').classList.remove('none');
     document.getElementById('dimensi').classList.add('none');
     document.getElementById('penumpang').classList.remove('none');
     document.getElementById('pakeType').innerText = "Wisata";
@@ -545,8 +545,8 @@
   
   // untuk paket rentcar
   document.getElementById('rentcar').addEventListener('click', () => {
-    document.getElementById('keberangkatan1').classList.toggle('none');
-    document.getElementById('keberangkatan2').classList.toggle('none');
+    document.getElementById('keberangkatan1').classList.add('none');
+    document.getElementById('keberangkatan2').classList.remove('none');
     document.getElementById('dimensi').classList.add('none');
     document.getElementById('penumpang').classList.remove('none');
     document.getElementById('pakeType').innerText = "Rentcar";
